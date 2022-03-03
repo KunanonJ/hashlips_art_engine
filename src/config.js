@@ -5,6 +5,7 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
+// Name
 const namePrefix = "Your Collection";
 const description = "Remember to replace this description";
 const baseUri = "ipfs://NewUriToReplace";
@@ -22,17 +23,21 @@ const solanaMetadata = {
 };
 
 // If you have selected Solana then the collection starts from 0 automatically
+
+// List and edit any Layers here
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    // Number of images that want to generate
+    growEditionSizeTo: 100,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "BG" },
+      { name: "Hair under" },
+      { name: "Body" },
+      { name: "Clothes" },
+      { name: "Mouth" },
+      { name: "Eyes" },
+      { name: "Hair top" },
+      { name: "Accessories" }
     ],
   },
 ];

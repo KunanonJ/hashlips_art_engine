@@ -42,7 +42,7 @@ const buildSetup = () => {
   fs.mkdirSync(`${buildDir}/images`);
   if (gif.export) {
     fs.mkdirSync(`${buildDir}/gifs`);
-  }
+  } 
 };
 
 const getRarityWeight = (_str) => {
