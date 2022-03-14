@@ -28,7 +28,7 @@ const solanaMetadata = {
 const layerConfigurations = [
   {
     // Number of images that want to generate
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 10000,
     layersOrder: [
       { name: "BG" },
       { name: "Hair under" },
